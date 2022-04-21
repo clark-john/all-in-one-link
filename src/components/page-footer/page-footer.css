@@ -1,0 +1,24 @@
+:host {
+  display: block;
+  color: #e2e8f0;
+}
+.footer {
+  padding: 2em 3em;
+  display: flex;
+  justify-content: space-between;
+  gap: 0px;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.footer-right-icons {
+  display: flex;
+  gap: 10px;
+}
+a>i {
+  color: #e2e8f0;
+}

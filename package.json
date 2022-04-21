@@ -1,0 +1,40 @@
+{
+  "name": "all-in-one-link",
+  "version": "0.0.1",
+  "description": "All Links in One Link",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.js",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs",
+  "types": "dist/types/components.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "unpkg": "dist/all-in-one-link/all-in-one-link.esm.js",
+  "files": [
+    "dist/",
+    "loader/"
+  ],
+  "scripts": {
+    "build": "stencil build --docs",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "gen": "stencil generate"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.1.1",
+    "@stencil/core": "^2.13.0"
+  },
+  "devDependencies": {
+    "@stencil/postcss": "^2.1.0",
+    "@types/eslint": "^8.4.1",
+    "@types/jest": "^27.0.3",
+    "autoprefixer": "^10.4.4",
+    "jest": "^27.4.5",
+    "jest-cli": "^27.4.5",
+    "postcss": "^8.4.12",
+    "puppeteer": "^13.5.2",
+    "typescript": "^4.6.3"
+  },
+  "license": "MIT"
+}

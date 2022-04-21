@@ -1,0 +1,13 @@
+:host {
+  display: block;
+}
+.link-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}

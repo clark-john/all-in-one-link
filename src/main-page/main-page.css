@@ -1,0 +1,8 @@
+:host {
+  display: block;
+  font-family: Overpass;
+}
+div {
+  display: grid;
+  gap: 19px;
+}
