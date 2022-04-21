@@ -21,4 +21,8 @@
 }
 a>i {
   color: #e2e8f0;
+  transition: transform 250ms;
+}
+a>i:hover {
+  transform: scale(1.15);
 }
