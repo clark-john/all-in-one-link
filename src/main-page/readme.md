@@ -21,6 +21,7 @@ graph TD;
   main-page --> link-icons
   main-page --> main-links
   main-page --> page-footer
+  main-links --> link-item
   style main-page fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

@@ -20,6 +20,7 @@ export const config: Config = {
       serviceWorker: null, // disable service workers
     },
   ],
+  globalStyle: "./src/globals.css",
   devServer: {
     openBrowser: false,
     port: 5000,

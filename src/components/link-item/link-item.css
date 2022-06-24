@@ -1,13 +1,36 @@
 :host {
   display: block;
+  --invert: invert(100%);
 }
-.link-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-}
+
 a {
   text-decoration: none;
-  color: black;
 }
+
+.link {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: black;
+  padding: 19px 100px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 2em;
+  transition: transform 250ms, background-color 400ms;
+  filter: var(--invert);
+  font-weight: bold;
+}
+.link:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+@media only screen and (max-width: 670px) {
+  a {
+    width: 30px
+  }
+}
+

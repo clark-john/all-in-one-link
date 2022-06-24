@@ -16,19 +16,21 @@ export class LinkItem {
 
   render() {
     return (
-      <Host class="link">
-        <a href={this.link} target="_blank">
-          <slot>
-            <div class="link-item">
-              <div>
-              {this.name}
-              </div> 
-              <span>
-                <img src={this.icon} alt={this.alt} width={this.width} height={this.height} />
-              </span>
+      <Host>
+        <slot>
+          <a href={this.link} target="_blank">
+            <div class="link">
+              {this.name} 
+              <img 
+                src={this.icon} 
+                alt={this.alt} 
+                width={this.width} 
+                height={this.height} 
+                class="icon"
+              />
             </div>
-          </slot>
-        </a>
+          </a>
+        </slot>
       </Host>
     );
   }
