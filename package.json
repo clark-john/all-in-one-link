@@ -2,6 +2,7 @@
   "name": "all-in-one-link",
   "version": "0.0.1",
   "description": "All Links in One Link",
+  "author": "John Clark",
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
   "es2015": "dist/esm/index.mjs",
@@ -26,7 +27,7 @@
     "@stencil/core": "^2.13.0"
   },
   "devDependencies": {
-    "@stencil/postcss": "^2.1.0",
+    "@stencil/sass": "^1.5.2",
     "@types/eslint": "^8.4.1",
     "@types/jest": "^27.0.3",
     "autoprefixer": "^10.4.4",

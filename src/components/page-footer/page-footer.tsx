@@ -2,11 +2,10 @@ import { Component, Host, h } from '@stencil/core';
 
 @Component({
   tag: 'page-footer',
-  styleUrl: 'page-footer.css',
+  styleUrl: 'page-footer.scss',
   scoped: true,
 })
 export class PageFooter {
-
   render() {
     return (
       <Host>
@@ -22,7 +21,7 @@ export class PageFooter {
                 Contact Me:
               </div>
               <div class="footer-right-icons">
-                <a href="https://instagram.com/cl4rk_ig" target='_blank'>
+                <a href="https://instagram.com/cl4rk_john" target='_blank'>
                   <i class="fab fa-instagram" />
                 </a>
                 <a href="https://twitter.com/cl4rk_tw" target='_blank'>

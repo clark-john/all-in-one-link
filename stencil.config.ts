@@ -1,6 +1,5 @@
 import { Config } from '@stencil/core';
-import { postcss } from '@stencil/postcss'
-import autoprefixer from 'autoprefixer';
+import { sass } from '@stencil/sass';
 
 export const config: Config = {
   namespace: 'all-in-one-link',
@@ -23,14 +22,9 @@ export const config: Config = {
   globalStyle: "./src/globals.css",
   devServer: {
     openBrowser: false,
-    port: 5000,
-    reloadStrategy: 'pageReload'
+    port: 5000
   },
   plugins: [
-    postcss({
-      plugins: [
-        autoprefixer(),
-      ]
-    })
+    sass()
   ]
 };

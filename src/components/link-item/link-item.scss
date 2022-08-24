@@ -1,0 +1,44 @@
+:host {
+  display: block;
+  --invert: invert(100%);
+}
+
+@mixin link-style() {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: black;
+  padding: 19px 100px;
+  border-width: 1px;
+  border-style: solid;
+  font-weight: bold;
+  border-radius: 2em;  
+  filter: var(--invert);
+}
+
+a {
+  text-decoration: none;
+}
+
+.link {
+  @include link-style;
+  transition: transform 250ms, background-color 400ms;
+  &:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+.unavailable {
+  @include link-style;
+  opacity: 40%;
+}
+
+@media only screen and (max-width: 670px) {
+  a {
+    width: 30px;
+  }
+}

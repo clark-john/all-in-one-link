@@ -3,17 +3,16 @@
 }
 .icon {
   width: 40px;
-}
-i.icon {
   font-size: 2.25rem;
   color: #000;
 }
 
-img,i {
+img, i {
   filter: invert(100%);
   transition: transform 0.125s, filter 0.125s;
 }
-img:hover,i:hover {
+
+img:hover, i:hover {
   filter: invert(50%);
   cursor: pointer;
   transform: scale(1.2);

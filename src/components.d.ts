@@ -12,6 +12,7 @@ export namespace Components {
         "alt"?: string;
         "height"?: number;
         "icon"?: string;
+        "isAvailable": boolean;
         "link": string;
         "name": string;
         "width"?: number;
@@ -78,6 +79,7 @@ declare namespace LocalJSX {
         "alt"?: string;
         "height"?: number;
         "icon"?: string;
+        "isAvailable"?: boolean;
         "link"?: string;
         "name"?: string;
         "width"?: number;

@@ -25,10 +25,12 @@
   display: flex;
   gap: 10px;
 }
-a>i {
+
+a > i {
   color: #e2e8f0;
   transition: transform 250ms;
-}
-a>i:hover {
-  transform: scale(1.15);
+  &:hover {
+    transform: scale(1.15);
+    cursor: pointer;
+  }
 }
